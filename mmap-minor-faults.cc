@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
   CLI::App app{"mmap minor faults experiment"};
 
   std::string profiling = "none";
-  app.add_option("--profiling", profiling, "What kind of profiling to run: none, stat, record");
+  app.add_option("--profiling", profiling, "What kind of profiling to run: none (default), stat, record");
 
   CLI11_PARSE(app, argc, argv);
 
